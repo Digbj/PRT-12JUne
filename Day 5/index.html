@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+       
+        <div class="main">
+            <div class='pic'><img id="picaso" src="./img/hd.jpg" alt="pic"/></div>
+            <div class="btn"><button id="M">Open A Pic</button><input onpointerleave="pic()" id="N" type="file"/><button onclick="pick()">Pick Color</button></div>
+            <div class="div2">
+                <div class="A">
+                    <div class="B"><input id="K" value="" class="inp" placeholder="Color"/><button onclick="fun()"><img id="image" src="./img/copy.png" alt="img"/></button></div>
+                    <div class="B"> <input id="L" class="inp" placeholder="RGB code"/><button onclick="fun1()"><img id="image" src="./img/copy.png" alt="img"/></button></div>
+                   
+                </div>
+                <div class="col" style="background-color:blue;"></div>
+            </div>
+            <div><p id="code"></p></div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function pic(){
+            const input = document.getElementById("N");
+      const file = input.files[0];
+      const image = URL.createObjectURL(file);
+      const pic = document.getElementById("picaso");
+      pic.src = image;
+    //   console.log(file.name);        
+        }
+
+        function fun(){
+            var color=document.getElementById('K').value
+            var color1=document.getElementById('L').value
+            var code=document.getElementById('code');
+            var col=document.querySelector('.col');
+            let coll
+            let coll1
+            coll=color
+            if(!coll){
+               code.innerHTML="Give a valid Color" 
+            }else{
+                code.innerHTML='Color-Code Copid'
+            }
+            col.style.backgroundColor=coll;
+            console.log(color)
+
+
+        }
+        function fun1(){
+            
+            var color=document.getElementById('L').value
+            var code=document.getElementById('code');
+            var col=document.querySelector('.col');
+            let coll
+           
+            coll=color
+            if(!coll){
+               code.innerHTML="Give a valid Color" 
+            }else{
+                code.innerHTML='Color-Code Copid'
+            }
+            col.style.backgroundColor=coll;
+            console.log(color)
+
+
+        }
+
+        function pick(){
+            const div2=document.querySelector('.div2');
+            div2.style.opacity=1;
+        }
+        
+        
+    </script>
+</body>
+</html>

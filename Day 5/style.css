@@ -1,0 +1,120 @@
+body{
+    background-color: blueviolet;
+  
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 500px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: azure;
+}
+.pic{
+    height: 200px;
+    width: 260px;
+    border: 1px solid black;
+
+}
+
+button{
+    margin: 20px;
+}
+.col{
+    height: 110px;
+    width: 100px;
+    border: 5px solid black;
+    border-radius: 5px;
+
+}
+.div2{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+input{
+    margin: 10px;
+height: 40px;
+width: 70px;
+border: hidden;
+border-bottom: 1px solid black;
+}
+#image{
+    height: 30px;
+    width: 10px;
+}
+.A{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.A >div{
+    height: 30px; 
+    margin: 10px;   
+/* border: 1px solid black; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.B{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#N{
+    position: relative;
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+    margin-left: -5px;
+}
+#M{
+position: absolute;
+margin-left: 0px;
+}
+#N:hover{
+cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+}
+input:hover{
+    cursor: pointer;
+}
+.btn button{
+background-color: rgb(0, 195, 255); 
+border: 1px solid;
+border-radius: 5px;   
+}
+
+.pic img{
+    height: 200px;
+    width: 260px;
+}
+#code{
+ color: rgb(1, 20, 18);
+ height: 30px;
+ width: 250px;
+ text-align: center;
+ align-items: center;
+ background-color: rgb(0, 249, 241);
+}
+.div2{
+    opacity: 0;
+}

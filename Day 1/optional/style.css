@@ -1,0 +1,175 @@
+.parent{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 35px;
+}
+.container{
+    position: relative;
+    align-items: center;
+    height: 30rem;
+    width: 50rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#logo{
+height: 50px;
+width:50px;
+
+}
+.logo{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.util{
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 7%;
+}
+span{
+    /* margin-top: 10px; */
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: steelblue;
+}
+li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+}
+li:hover{
+    color: rgb(0, 255, 213);
+    cursor: pointer;
+}
+#dot{
+    margin-left: 5%;
+    margin-top: -50%;
+    color: rgb(145, 131, 21);
+}
+p{
+    color: rgb(145, 131, 21);
+}
+h1{
+    margin-left: 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#p1{
+    margin-left: 5%;
+    margin-top: 0; 
+    margin-bottom: 0;
+    color: rgb(131, 131, 126);
+}
+#ser{
+    height: 20px;
+    width: 20px;
+    
+}
+.sear{
+    margin-top: 50px;
+    margin-left: 5%;
+    height: 55px;
+    border: 1px solid black;
+    width: 60%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 80%;
+    height:60%;
+    border: hidden;
+    font-size: large;
+    align-items: center;
+}
+input:focus{
+    outline: none;
+}
+button{
+    background:none;
+    border: none;
+    height: 100%;
+    border-left: 1px solid black;
+}
+button:hover{
+    cursor: pointer;
+    /* background:skyblue; */
+}
+a{
+    margin-left: 5%;
+    
+}
+.anc{
+  margin-top: 50px;  
+}
+.pic{
+    height: 130%;
+    width: 40%;
+    margin-left: 50%;
+    border: 3px solid black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    rotate: 315deg;
+}
+
+#div1{
+    height: 20%;
+    width: 150px;
+    border: 1px solid black;
+    background-color:black;
+}
+#div2{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#A1{
+    height: 280px ;
+    width: 50%;
+    background-color: azure;
+    position: relative;
+    transform-origin: center center;
+}
+#A2{
+    margin-right: 10%;
+    height: 150px ;
+    width: 150px;
+    background-color: azure;
+}
+#div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#A3{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+#A1 img{
+    position: absolute;
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Optional: Reset the rotation for the image */
+  transform: rotate(-315deg);
+  /* Optional: Adjust the image position if needed */
+  object-fit: cover;
+}
